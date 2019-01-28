@@ -11,7 +11,6 @@ RUN yum -y install nodejs npm; yum clean all
 COPY . /src
 
 # Install app and dependencies into /src in container
-RUN cd /src; npm uninstall
 RUN cd /src; npm install
 
 # Document the port the app listens on
